@@ -2,7 +2,7 @@ import * as Discord from "discord.js";
 import { commands } from "./commands";
 const Sequelize = require("sequelize");
 
-const auth = require("../auth.json");
+require('dotenv').config();
 
 // Initialize Discord Bot
 const client: Discord.Client = new Discord.Client({})
@@ -48,4 +48,4 @@ client.on("message", async (message) => {
 
 });
 
-client.login(auth.BOT_TOKEN)
+client.login(process.env.BOT_TOKEN)
