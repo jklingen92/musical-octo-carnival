@@ -28,7 +28,7 @@ async function makeNomChannel(message: Message) {
           deny: ["SEND_MESSAGES"]
         },
         {
-          id: message.guild.roles.cache.find(r => r.name === "Write-In Poll"),
+          id: message.guild.roles.cache.find(r => r.name === "Musical Octo Carnival"),
           allow: ["SEND_MESSAGES"]
         }
       ]
